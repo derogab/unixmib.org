@@ -1,0 +1,57 @@
+{% extends "_nunjucks/base.html" %}
+{% set active_page = "blog" %}
+
+{% block title %}
+UnixMiB - Blog
+{% endblock %}
+
+{% block metaDescription %}
+Blog di UnixMib, il gruppo utenti Linux dell'università Milano Bicocca
+{% endblock %}
+
+
+{% block body %}
+{% include "_nunjucks/header.html" %}
+<main id="page-blog">
+	<div class="posts container">
+		<div class="post">
+			<div class="cover" style="background: url('https://www.kde.org/announcements/plasma5.0/screenshots/desktop.png') no-repeat center center;background-size: cover;"></div>
+			<div class="data">
+				<h2 class="title">Lorem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+		</div>
+		<div class="post">
+			<div class="data">
+				<h2 class="title">Lorem titolo lungo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+		</div>
+		<div class="post">
+			<div class="data">
+				<h2 class="title">This is a test</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+		</div>
+		<div class="post">
+			<div class="cover" style="background: url('http://i.imgur.com/X8wETFt.png') no-repeat center center;background-size: cover;"></div>
+			<div class="data">
+				<h2 class="title">Hello, World!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock %}

@@ -1,0 +1,77 @@
+header{
+	
+	padding: 0.5em 1em;
+	position: fixed;
+	@media (max-width: 768px){
+		position: relative;
+	} 
+
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+	background-color: white;
+	
+	display: table;
+	width: 100%;
+	.left, .right{
+		display: table-cell;
+		vertical-align: middle;
+
+	}
+	
+	@media (max-width: 768px){
+
+
+		.left, .right{
+			display: block;
+			text-align: center;
+		}
+
+		.right a{
+			display: block;
+		}
+
+		.right .divider{
+			display: none;
+		}
+	} 
+
+	.left{
+		h1{
+			display: inline-block;
+			font-weight: normal;
+
+			span{
+				font-weight: lighter;
+				color: $main-color;
+			}
+		}
+		
+		img{
+			height: 2.5em;
+			margin-right: 0.5em;
+		}
+	}
+
+	.right{
+		font-size: 1.4em;
+		
+		font-weight: lighter;
+		.divider{
+			color: $main-color;
+		}
+
+		a{
+			&:hover{
+				color: $blue;
+			}
+
+			&.active{
+				color: $blue;
+			}
+		}
+	}
+}
