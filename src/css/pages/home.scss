@@ -2,19 +2,17 @@
 
 	#hero{
 		@include cover-background('http://www.unimib.it/upload/gestioneFiles/relazioniEsterne/presskit/fotocampus/bicocca2003.jpg', true);
-		
-		padding: 2.5em;
-		margin-top: 4.1em;
+
+		padding: 2.5rem;
+		margin-top: 4.1rem;
 
 		@media (max-width: 768px){
 			margin-top: 0;
-		} 
-
-		position: relative;
+		}
 
 		.title{
 			color: white;
-			font-size: 2.5em;
+			font-size: 2.5rem;
 			font-weight: normal;
 			@include tshadow;
 			span{
@@ -30,107 +28,107 @@
 
 	section{
 		margin: 0 auto;
-		padding: 2em 0.5em;
-		border-bottom: 1px solid #D5D5D5;
+		padding: 2rem 0.5rem;
 
 		h1{
 			text-shadow: 0 1px 3px rgba(0,0,0,0.1);
 			display: inline-block;
 			color: $blue;
 			font-weight: lighter;
-			font-size: 2.25em;
-			line-height: 1.1em;
+			font-size: 2.25rem;
+			line-height: 1.1rem;
 		}
 
 		.icon{
 			text-shadow: 0 1px 3px rgba(0,0,0,0.1);
 			color: $black;
 			display: block;
-			font-size: 5.5em;
+			font-size: 5rem;
 		}
 
 		.desc{
-			font-size: 1.5em;
+			font-size: 1.5rem;
 			font-weight: lighter;
+			max-width: 90%;
+			margin: 0 auto;
 
 			.hl{
 				display: inline-block;
 				font-weight: 500;
 				color: $main-color;
-				line-height: 1.3em;
+				line-height: 1.3rem;
 			}
 		}
 
 		&#cosaFacciamo, &#social{
-
 			.row{
 				h2{
 					display: inline-block;
 					font-weight: 500;
-					line-height: 1.3em;
+					line-height: 1.3rem;
 					color: $main-color;
 				}
 
 				.desc{
-					font-size: 1.3em;
+					font-size: 1.3rem;
 				}
 			}
 		}
-		
-		&#social{
+
+		&#cosaFacciamo {
+			.row {
+ 				display: flex;
+			}
+			.col {
+				flex: 1;
+			}
+
+			@media (max-width: 768px){
+				.row {
+					display: block;
+				}
+			}
+		}
+
+		&#blog {
+			max-width: 90%;
 
 			h1{
 				@media (max-width: 768px){
 					text-align: center;
 					display: block;
-				} 
+				}
 			}
 			.posts{
-			
 				.post{
-					margin: 0.5em 0;
-
+					display: block;
+					margin: 0.5rem 0;
 					&:last-of-type{
 						border-bottom: 0;
 					}
 
-					a.title{
-						font-size: 1.5em;
+					.title{
+						font-size: 1.5rem;
 						color: $black;
 						text-decoration: none;
 					}
 
 					&:hover{
-						a{
+						.title {
 							color: $main-color;
 						}
 					}
 				}
-				
-			}
-			
-			.social{
-				.icon{
-					text-shadow: 0 1px 3px rgba(0,0,0,0.1);
-					display: block;
-					font-size: 3em;
-					line-height: 1em;
-				}
 
-				h3{
-					color: $black;
-					display: inline-block;
-					font-weight: normal;
-				}
 			}
-			
 		}
-		&.img{
-			&#foto1{
+
+		&.img {
+			&#foto1 {
 				@include cover-background('http://www.impresamia.com/wp-content/uploads/2014/11/3112011152243a.jpg', true);
 			}
 
-			&#foto2{
+			&#foto2 {
 				@include cover-background('http://www.unimib.it/upload/gestioneFiles/relazioniEsterne/presskit/fotocampus/panoramica.jpg', true);
 			}
 		}

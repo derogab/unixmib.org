@@ -5,6 +5,7 @@
 UnixMiB - Home Page
 {% endblock %}
 
+
 {% block metaDescription %}
 Sito ufficiale UnixMib, il gruppo utenti Linux dell'università Milano Bicocca
 {% endblock %}
@@ -14,27 +15,27 @@ Sito ufficiale UnixMib, il gruppo utenti Linux dell'università Milano Bicocca
 {% include "_nunjucks/header.html" %}
 <main id="page-home">
 <div class="center" id="hero">
-	<div class="">
-		<h1 class="title">Unix<span class="light-text">MiB</span></h1>
-		<img class="eh10" src="img/Logo.png" alt="">
-		<h2 class="subtitle normal-text ">Gruppo Utenti <span class="tinted">Linux</span></h2>
-		<h2 class="subtitle normal-text">Università Milano <span class="tinted">Bicocca</span></h2>
-	</div>
-	
+	<h1 class="title">Unix<span class="light-text">MiB</span></h1>
+	<img class="eh10" src="img/Logo.png" alt="">
+	<h2 class="subtitle normal-text ">Gruppo Utenti <span class="tinted">Linux</span></h2>
+	<h2 class="subtitle normal-text">Università Milano <span class="tinted">Bicocca</span></h2>
 </div>
-<section id="chiSiamo" class="center container">
+
+<section id="chiSiamo" class="center">
 	<h1>Chi Siamo</h1>
 	<i class="icon fi-torsos-all"></i>
 	<div class="desc">
 		<span class="hl">UnixMib</span> nasce nell'Ottobre 2015 per opera di alcuni studenti della <span class="hl">Bicocca</span> appassionati di <span class="hl">Open Source</span> e di <span class="hl">Linux</span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 	</div>
 </section>
+
 <section class="img eh15" id="foto1">
 </section>
-<section id="cosaFacciamo" class="center container">
+
+<section id="cosaFacciamo" class="center">
 	<h1>Cosa Facciamo</h1>
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col">
 			<div class="icon fi-flag"></div>
 			<h2 class="title">Eventi</h2>
 			<p class="desc">
@@ -42,7 +43,7 @@ Sito ufficiale UnixMib, il gruppo utenti Linux dell'università Milano Bicocca
 				tempor incididunt ut labore et dolore magna aliqua.
 			</p>
 		</div>
-		<div class="col-md-4">
+		<div class="col">
 			<div class="icon fi-book"></div>
 			<h2 class="title">Corsi</h2>
 			<p class="desc">
@@ -50,7 +51,7 @@ Sito ufficiale UnixMib, il gruppo utenti Linux dell'università Milano Bicocca
 				tempor incididunt ut labore et dolore magna aliqua.
 			</p>
 		</div>
-		<div class="col-md-4">
+		<div class="col">
 			<div class="icon fi-wrench"></div>
 			<h2 class="title">Aiuto</h2>
 			<p class="desc">
@@ -60,47 +61,31 @@ Sito ufficiale UnixMib, il gruppo utenti Linux dell'università Milano Bicocca
 		</div>
 	</div>
 </section>
+
 <section class="img eh15" id="foto2">
 </section>
-<section id="social" class="container">
+
+<section id="blog">
 	<div class="row">
 		<div class="col-md-12">
 			<h1><a href="/blog">Ultime dal Blog</a></h1>
 			<div class="posts">
-				<div class="post">
-					<a class="title" href="#">Titolo</a>
+				<a href="#" class="post">
+					<span class="title">Titolo</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos enim ipsam sed voluptatem libero hic soluta, odio dolores, provident facere inventore quas quisquam perferendis cupiditate velit iusto perspiciatis qui distinctio!</p>
-				</div>
-				<div class="post">
-					<a class="title"  href="#">Titolo un po' piu' lungo ma comunque titolo</a>
+				</a>
+				<a class="post" href="#">
+					<span class="title">Titolo un po' piu' lungo ma comunque titolo</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum hic accusamus nisi quo amet, fugiat adipisci quibusdam obcaecati facere nostrum at, maiores dolorum odit numquam itaque laboriosam, delectus neque necessitatibus!</p>
-				</div>
-				<div class="post">
-					<a class="title"  href="#">Altro Titolo</a>
+				</a>
+				<a class="post" href="#">
+					<span class="title">Altro Titolo</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorem ex voluptate, impedit praesentium aperiam! Magni blanditiis eius magnam, cum omnis animi autem earum et at nesciunt, sunt beatae odio!</p>
-				</div>
-				
+				</a>
 			</div>
 		</div>
 	</div>
-	<!--<br>
-	<div class="row center">
-		<div class="col-md-12">
-			<h1>Unisciti a noi</h1>
-		</div>
-		<div class="social col-md-4">
-			<div class="icon fi-mail"></div>		
-			<h3>Mailing List</h3>
-		</div>	
-		<div class="social col-md-4">
-			<div class="icon fi-social-facebook"></div>		
-			<h3>Pagina Facebook</h3>
-		</div>	
-		<div class="social col-md-4">
-			<div class="icon fi-comment"></div>		
-			<h3>Blog</h3>
-		</div>	
-	</div>-->
 </section>
+
 </main>
 {% endblock %}
