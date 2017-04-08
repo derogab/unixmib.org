@@ -3,6 +3,7 @@ var path = require('path');
 
 var gulp = require('gulp');
 var gulpLoadPlugins = require('gulp-load-plugins');
+var gulpSequence = require('gulp-sequence');
 var browserSync = require('browser-sync');
 var bowerFiles = require('main-bower-files');
 
@@ -86,37 +87,40 @@ gulp.task('browser-sync', () => {
 	});
 });
 
-gulp.task('build', ['html', 'css', 'js', 'img', 'root', 'bower']);
+gulp.task('build', gulpSequence(['css', 'js', 'img', 'root', 'bower'], 'html'));
 
-gulp.task('dev', ['html', 'css', 'js', 'img', 'root', 'bower', 'browser-sync'], function() {
-	$.watch(srcFolder + '/html/**/*.html', function() {
-		gulp.start('html', function(){
-			reload();
+gulp.task('dev', function() {
+	gulpSequence(['css', 'js', 'img', 'root', 'bower'], 'html', 'browser-sync', function() {
+		$.watch(srcFolder + '/html/**/*.html', function() {
+			gulp.start('html', function(){
+				reload();
+			});
+		});
+		$.watch([srcFolder + '/css/**/*.scss',srcFolder + 'css/**/*.css'], function() {
+			gulp.start('css', function(){
+				reload();
+			});
+		});
+		$.watch(srcFolder + '/js/**/*.js', function() {
+			gulp.start('js', function(){
+				reload();
+			});
+		});
+		$.watch(srcFolder + '/img/**/*', function() {
+			gulp.start('img', function(){
+				reload();
+			});
+		});
+		$.watch(srcFolder + '/root/**/*', function() {
+			gulp.start('root', function(){
+				reload();
+			});
+		});
+		$.watch(srcFolder + '/bower_components/**/*', function() {
+			gulp.start('bower', function(){
+				reload();
+			});
 		});
 	});
-	$.watch([srcFolder + '/css/**/*.scss',srcFolder + 'css/**/*.css'], function() {
-		gulp.start('css', function(){
-			reload();
-		});
-	});
-	$.watch(srcFolder + '/js/**/*.js', function() {
-		gulp.start('js', function(){
-			reload();
-		});
-	});
-	$.watch(srcFolder + '/img/**/*', function() {
-		gulp.start('img', function(){
-			reload();
-		});
-	});
-	$.watch(srcFolder + '/root/**/*', function() {
-		gulp.start('root', function(){
-			reload();
-		});
-	});
-	$.watch(srcFolder + '/bower_components/**/*', function() {
-		gulp.start('bower', function(){
-			reload();
-		});
-	});
+
 });

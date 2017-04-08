@@ -27,6 +27,7 @@
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^0.4.6",
     "gulp-uglify": "^2.1.2",
     "gulp-watch": "^4.3.5",
     "main-bower-files": "^2.9.0"
