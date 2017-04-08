@@ -13,7 +13,6 @@ var srcFolder = path.resolve(__dirname, "src");
 var distFolder = path.resolve(__dirname, "dist");
 
 gulp.task('html', () => {
-	console.log(srcFolder + '/html/**/*.html')
 	return gulp.src([
 		srcFolder + '/html/**/*.html', // all the html
 		'!' + srcFolder + '/html/_nunjucks/**/*' // not the template files
