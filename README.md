@@ -2,29 +2,30 @@
 
 * Clone/fork
 * `npm install`
-* `bower install`
-* `gulp` 
+* `npm run setup`
+* `npm run dev`
 * Edit files in `src` folder.
 
+### Building
+
+* `npm run build`
 
 ## Technologies & Tools
 
 * Gulp
-* Bower for css/js bower components
+* Bower for CSS/JS components
 * Nunjucks for HTML Templating
 * Sass for the style (with a few helper classes)
-* Other: Bootstrap grid, Foundation Icons, jQuery
-* Other2: yeoman for bootstraping all the files and folders (using this generator https://github.com/crisbal/generator-crisbal-webdev)
-
+* Other: Foundation Icons
 
 ## Gulp script
 
 The included gulp script will take care of starting the local dev environment.
 
 Interesting features of the script:
+
 * livereload the browser on changes
-* prefixing of css rules
-* image minification
-* html,css,js minification
-* sass compilation
-* much more
+* prefixing of CSS rules
+* html, css, js, image minification
+* Sass compilation
+* Much more
