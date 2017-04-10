@@ -11,6 +11,10 @@ body {
 }
 
 a {
+	color: #3c91e6;
 	text-decoration: none;
-	color: inherit;
+}
+
+a:hover {
+	color: blue;
 }
