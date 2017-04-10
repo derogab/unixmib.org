@@ -30,7 +30,7 @@
 		margin: 0 auto;
 		padding: 2rem 0.5rem;
 
-		h1{
+		h2{
 			text-shadow: 0 1px 3px rgba(0,0,0,0.1);
 			display: inline-block;
 			color: $blue;
@@ -52,7 +52,7 @@
 			max-width: 90%;
 			margin: 0 auto;
 
-			.hl{
+			.h2{
 				display: inline-block;
 				font-weight: 500;
 				color: $main-color;
@@ -62,7 +62,7 @@
 
 		&#cosaFacciamo, &#social{
 			.row{
-				h2{
+				h3{
 					display: inline-block;
 					font-weight: 500;
 					line-height: 1.3rem;
@@ -93,7 +93,7 @@
 		&#blog {
 			max-width: 90%;
 
-			h1{
+			h2{
 				@media (max-width: 768px){
 					text-align: center;
 					display: block;
