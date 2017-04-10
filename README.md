@@ -13,8 +13,8 @@
 ### Accessibility
 
 The template follows the HTML/CSS Style Guide made by Google: https://google.github.io/styleguide/htmlcssguide.html (only rules related to accessibility for now):
-* HTML5 standard must be followed (you should use https://validator.w3.org)
-
+* HTML5 standard must be followed (you should use https://validator.w3.org);
+* Use Multimedia Fallback;
 
 ## Technologies & Tools
 
