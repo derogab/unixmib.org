@@ -122,7 +122,9 @@
 
 			}
 		}
+	}
 
+	div {
 		&.img {
 			&#foto1 {
 				@include cover-background('http://www.impresamia.com/wp-content/uploads/2014/11/3112011152243a.jpg', true);
