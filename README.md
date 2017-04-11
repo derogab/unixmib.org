@@ -16,7 +16,7 @@ The skin must be responsive.
 
 Don't use blue color for text unless it's a link.
 
-HTML5/JS standards must be followed (you should use https://validator.w3.org and https://jigsaw.w3.org/css-validator/).
+HTML5/CSS standards must be followed (you should use https://validator.w3.org and https://jigsaw.w3.org/css-validator/).
 
 Use Multimedia Fallback (e.g. use alt="" in img tags).
 
