@@ -11,7 +11,10 @@
 * `npm run build`
 
 ### Accessibility
+
 The skin must be responsive.
+
+*Don't* use blue color for text unless it's a link.
 
 The template follows the HTML/CSS Style Guide made by Google: https://google.github.io/styleguide/htmlcssguide.html (only rules related to accessibility for now):
 * HTML5/JS standards must be followed (you should use https://validator.w3.org and https://jigsaw.w3.org/css-validator/);

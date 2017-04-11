@@ -11,10 +11,10 @@ body {
 }
 
 a {
-	color: #3c91e6;
+	color: $blue;
 	text-decoration: none;
 }
 
 a:hover {
-	color: blue;
+	text-decoration: underline;
 }
