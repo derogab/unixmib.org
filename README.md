@@ -18,10 +18,12 @@ Don't use blue color for text unless it's a link.
 
 HTML5/JS standards must be followed (you should use https://validator.w3.org and https://jigsaw.w3.org/css-validator/).
 
-Use Multimedia Fallback (e.g. use alt="" in img tags).
+Use Multimedia Fallback (e.g. use alt="" in img tags). Use longdesc attributed when needed.
 
 Keyboard can be used to move between elements of the page without problems.
 If it is necessary use tabindex.
+
+Test the website in greyscale and in high contrast.
 
 ## Technologies & Tools
 
