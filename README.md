@@ -20,6 +20,9 @@ HTML5/JS standards must be followed (you should use https://validator.w3.org and
 
 Use Multimedia Fallback (e.g. use alt="" in img tags).
 
+Keyboard can be used to move between elements of the page without problems.
+If it is necessary use tabindex.
+
 ## Technologies & Tools
 
 * Gulp
