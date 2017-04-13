@@ -41,9 +41,19 @@
 
 	&__right{
 		font-size: 1.4rem;
-		font-weight: lighter;
+
+		.divider{
+			color: gray;
+			font-weight: lighter;
+		}
 
 		a{
+			display: inline-block;
+			font-weight: lighter;
+
+			margin: 0.25rem;
+			color: $black;
+
 			&:hover{
 				color: $blue;
 			}
