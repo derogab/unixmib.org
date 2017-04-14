@@ -5,7 +5,7 @@
 	position: fixed;
 
 	@media (max-width: 768px){
-		position: relative;
+		position: static;
 	}
 
 	top: 0;
@@ -19,6 +19,7 @@
 
 	&__left{
 		flex: 1;
+
 		h1{
 			display: inline-block;
 			font-weight: normal;
@@ -34,9 +35,19 @@
 			margin-right: 0.5rem;
 		}
 
-        a {
-            color: $black;
-        }
+		a {
+			color: $black;
+			display: flex;
+			align-items: center;
+
+			@media (max-width: 768px){
+				justify-content: center;
+			}
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
 	}
 
 	&__right{
