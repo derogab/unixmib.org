@@ -1,7 +1,7 @@
 #page-home{
 
 	#hero{
-		@include cover-background('http://www.unimib.it/upload/gestioneFiles/relazioniEsterne/presskit/fotocampus/bicocca2003.jpg', true);
+		@include cover-background('/img/hero.jpg', true);
 
 		padding: 2.5rem;
 		margin-top: 3.1rem;
@@ -131,7 +131,7 @@
 	div {
 		&.img {
 			&#foto1 {
-				@include cover-background('http://www.impresamia.com/wp-content/uploads/2014/11/3112011152243a.jpg', true);
+				@include cover-background('/img/foto1.jpg', true);
 			}
 
 			&#foto2 {
