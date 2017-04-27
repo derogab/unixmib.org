@@ -25,6 +25,8 @@ If it is necessary use tabindex.
 
 Test the website in greyscale and in high contrast.
 
+Nav must contains one and only one ul element.
+
 ## Technologies & Tools
 
 * Gulp
