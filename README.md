@@ -1,6 +1,6 @@
 ## How to work on the project
 
-* Clone/fork
+* Clone/fork (git LFS required)
 * `npm install`
 * `npm run setup`
 * `npm run dev`
