@@ -55,10 +55,16 @@
 	&__right{
 		font-size: 1.4rem;
 
-		.divider{
-			color: gray;
-			font-weight: lighter;
+		li{
+			list-style: none;
+			display: inline-block;
 		}
+		li:before {
+    content: "-";
+    }
+    li:first-child:before {
+    content: "";
+    }
 
 		a{
 			display: inline-block;
