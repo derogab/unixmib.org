@@ -18,14 +18,14 @@ Don't use blue color for text unless it's a link.
 
 HTML5/CSS standards must be followed (you should use https://validator.w3.org and https://jigsaw.w3.org/css-validator/).
 
-Use Multimedia Fallback (e.g. use alt="" in img tags). Use longdesc attributed when needed.
+Use Multimedia Fallback (`alt=""` in img tags and so on). Use `longdesc` attributes when needed.
 
 Keyboard can be used to move between elements of the page without problems.
-If it is necessary use tabindex.
+If it is necessary use `tabindex`.
 
 Test the website in greyscale and in high contrast.
 
-Nav must contains one and only one ul element.
+A `nav` tag must contain one and only one `ul` element.
 
 ## Technologies & Tools
 
