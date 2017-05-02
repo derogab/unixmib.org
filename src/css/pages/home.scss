@@ -135,7 +135,7 @@
 			}
 
 			&#foto2 {
-				@include cover-background('http://www.unimib.it/upload/gestioneFiles/relazioniEsterne/presskit/fotocampus/panoramica.jpg', true);
+				@include cover-background('/img/foto2.jpg', true);
 			}
 		}
 	}
