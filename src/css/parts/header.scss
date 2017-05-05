@@ -59,11 +59,20 @@
 			list-style: none;
 			display: inline-block;
 		}
-		li:before {
-    content: "-";
+    @media (max-width: 768px){
+      li{
+				display: block;
+			}
     }
-    li:first-child:before {
-    content: "";
+    @media (min-width: 769px){
+      li{
+        &::before{
+          content: "-";
+        }
+        &:first-child::before {
+          content: "";
+        }
+      }
     }
 
 		a{
