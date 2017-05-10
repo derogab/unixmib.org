@@ -2,7 +2,6 @@
   "name": "unixmib",
   "private": true,
   "dependencies": {
-    "jquery": "~3.2.1",
-    "components-font-awesome": "^4.7.0"
+    "jquery": "~3.2.1"
   }
 }
