@@ -1,16 +1,33 @@
-## How to work on the project
+# unixMiB.github.io
 
-* Clone/fork (git LFS required)
+## Requirements
+
+* `node`, `npm`, `git`, `git-lfs` (https://git-lfs.github.com/)
+* Knowledge of HTML, Sass
+
+## Working on the project
+
+* `git clone https://github.com/unixMiB/unixmib.github.io`
+* `git lfs pull`
 * `npm install`
-* `npm run setup`
-* `npm run dev`
+* `npm run hot`
 * Edit files in `src` folder.
+* The website will be available on `http://localhost:8080/index.html`
 
-### Building
+### Building for production
 
-* `npm run build`
+* `npm run production`
+* built files will be in the `dist/folder`
 
-### Accessibility
+## Technologies & Tools
+
+* Webpack for build management
+  * Most of the work is taken care by [laravel-mix](https://github.com/JeffreyWay/laravel-mix) with a few custom configs inside `webpack.mix.js`
+* Pug for HTML Templating
+* Sass for the style (with a few helper classes)
+* Other: Fontawesome Icons
+
+## Accessibility
 
 The skin must be responsive.
 
@@ -26,23 +43,3 @@ If it is necessary use `tabindex`.
 Test the website in greyscale and in high contrast.
 
 A `nav` tag must contain one and only one `ul` element.
-
-## Technologies & Tools
-
-* Gulp
-* Bower for CSS/JS components
-* Nunjucks for HTML Templating
-* Sass for the style (with a few helper classes)
-* Other: Foundation Icons
-
-## Gulp script
-
-The included gulp script will take care of starting the local dev environment.
-
-Interesting features of the script:
-
-* livereload the browser on changes
-* prefixing of CSS rules
-* html, css, js, image minification
-* Sass compilation
-* Much more
