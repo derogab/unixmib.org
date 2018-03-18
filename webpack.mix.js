@@ -1,7 +1,8 @@
 let mix = require('laravel-mix');
 
 mix.sass('src/css/style.scss', 'dist')
-	.js('src/site.js', 'dist')
+  .js('src/site.js', 'dist')
+  .copy('src/img/favicon.png', 'dist/favicon.png')
 	.setPublicPath('dist')
 	.webpackConfig({
 		module: {
