@@ -4,6 +4,8 @@
 
 * `node`, `npm`, `git`, `git-lfs` (https://git-lfs.github.com/)
 * Knowledge of HTML, Sass
+  * Nice to have: Knowledge of Pug (https://github.com/pugjs/pug#syntax)
+    * Very fast to learn if you know html
 
 ## Working on the project
 
