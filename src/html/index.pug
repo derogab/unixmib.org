@@ -9,97 +9,68 @@ block metaDescription
 
 block body
   include parts/header.pug
-  <main id="page-home">
-    <div class="center" id="hero">
-      <h1 class="title">unix<span>MiB</span></h1>
-      <img class="eh10" src="~images/logo.svg" alt="unixMiB logo (a penguin)">
-      <h2 class="subtitle normal-text ">Gruppo Utenti <span class="tinted">Linux</span></h2>
-      <h2 class="subtitle normal-text">Università Milano <span class="tinted">Bicocca</span></h2>
-    </div>
-
-    <section id="chiSiamo" class="center">
-      <a class="anchor" id="chi-siamo"></a>
-      <h2>Chi Siamo</h2>
-      <i class="icon fa fa-users"></i>
-      <div class="desc">
-        <span class="hl">unixMiB</span> nasce nell'Ottobre 2015 per opera di alcuni studenti della <span class="h2">Bicocca</span> appassionati di <span class="h2">Open Source</span> e di <span class="hl">Linux</span>.
-      </div>
-    </section>
-
-    <div class="img eh15" id="foto1"></div>
-
-    <section id="cosaFacciamo" class="center">
-      <a class="anchor" id="gli-obiettivi"></a>
-      <h2>I nostri obiettivi</h2>
-      <div class="row">
-        <div class="col">
-          <div class="icon fa fa-flag"></div>
-          <h3 class="title">Eventi</h3>
-          <p class="desc">Organizziamo eventi per diffondere la filosofia dell'open source e del software libero.<br> Hai un idea da proporre? Condividila con noi!
-          </p>
-        </div>
-        <div class="col">
-          <div class="icon fa fa-wrench"></div>
-          <h3 class="title">Assistenza</h3>
-          <p class="desc">Difficoltà nell'installare Linux o problemi con qualche applicazione?<br> Nessun problema, offriamo supporto tecnico gratuito agli studenti dell'università Bicocca per tutti gli strumenti open source.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="img eh15" id="foto2"></div>
-
-    <section id="comeContattarci" class="center">
-      <a class="anchor" id="come-contattarci"></a>
-      <h2>Come contattarci</h2>
-      <div class="row">
-        <div class="col">
-          <a href="https://telegram.me/unixmib/" target="_blank">
-            <i class="icon fab fa-telegram"></i>
-            <b>Gruppo Telegram</b>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://telegram.me/unixmibinfo/" target="_blank">
-            <i class="icon fa fa-bullhorn"></i>
-            <b>Canale Telegram</b>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://www.facebook.com/unixmib/" target="_blank">
-            <i class="icon fab fa-facebook"></i>
-            <b>Pagina Facebook</b>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/unixmib/" target="_blank">
-            <i class="icon fab fa-github"></i>
-            <b>Github</b>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    //
-      <section id="blog">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><a href="/blog.html">Ultime dal Blog</a></h2>
-            <div class="posts">
-              <a href="#" class="post">
-                <span class="title">Titolo</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos enim ipsam sed voluptatem libero hic soluta, odio dolores, provident facere inventore quas quisquam perferendis cupiditate velit iusto perspiciatis qui distinctio!</p>
-              </a>
-              <a class="post" href="#">
-                <span class="title">Titolo un po' piu' lungo ma comunque titolo</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum hic accusamus nisi quo amet, fugiat adipisci quibusdam obcaecati facere nostrum at, maiores dolorum odit numquam itaque laboriosam, delectus neque necessitatibus!</p>
-              </a>
-              <a class="post" href="#">
-                <span class="title">Altro Titolo</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorem ex voluptate, impedit praesentium aperiam! Magni blanditiis eius magnam, cum omnis animi autem earum et at nesciunt, sunt beatae odio!</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-  </main>
+  main#page-home
+    #hero.center
+      h1.title
+        | unix
+        span MiB
+      img.eh10(src='~images/logo.svg', alt='unixMiB logo (a penguin)')
+      h2.subtitle.normal-text
+        | Gruppo Utenti
+        span.tinted  Linux
+      h2.subtitle.normal-text
+        | Università Milano
+        span.tinted  Bicocca
+    section#chiSiamo.center
+      a#chi-siamo.anchor
+      h2 Chi Siamo
+      i.icon.fa.fa-users
+      .desc
+        span.hl unixMiB
+        |  nasce nell'Ottobre 2015 per opera di alcuni studenti della
+        span.h2 &nbsp;Bicocca
+        |  appassionati di
+        span.h2 &nbsp;Open Source
+        |  e di
+        span.hl  Linux
+        | .
+    #foto1.img.eh15
+    section#cosaFacciamo.center
+      a#gli-obiettivi.anchor
+      h2 I nostri obiettivi
+      .row
+        .col
+          .icon.fa.fa-flag
+          h3.title Eventi
+          p.desc
+            | Organizziamo eventi per diffondere la filosofia dell'open source e del software libero.
+            br
+            |  Hai un idea da proporre? Condividila con noi!
+        .col
+          .icon.fa.fa-wrench
+          h3.title Assistenza
+          p.desc
+            | Difficoltà nell'installare Linux o problemi con qualche applicazione?
+            br
+            |  Nessun problema, offriamo supporto tecnico gratuito agli studenti dell'università Bicocca per tutti gli strumenti open source.
+    #foto2.img.eh15
+    section#comeContattarci.center
+      a#come-contattarci.anchor
+      h2 Come contattarci
+      .row
+        .col
+          a(href='https://telegram.me/unixmib/', target='_blank')
+            i.icon.fab.fa-telegram
+            b Gruppo Telegram
+        .col
+          a(href='https://telegram.me/unixmibinfo/', target='_blank')
+            i.icon.fa.fa-bullhorn
+            b Canale Telegram
+        .col
+          a(href='https://www.facebook.com/unixmib/', target='_blank')
+            i.icon.fab.fa-facebook
+            b Pagina Facebook
+        .col
+          a(href='https://github.com/unixmib/', target='_blank')
+            i.icon.fab.fa-github
+            b Github
